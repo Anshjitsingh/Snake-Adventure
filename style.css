@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid white;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hidden {
+    display: none;
+}
+
+#startScreen {
+    position: relative;
+    height: 100vh;
+}
+
+#startBg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#startScreen h1, #startButtons {
+    position: relative;
+    z-index: 1;
+}
