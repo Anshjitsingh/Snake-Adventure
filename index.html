@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game 600x600</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Menu iniziale -->
+<div id="startScreen">
+    <img src="images/background_start.jpg" id="startBg">
+    <h1>🐍 SNAKE GAME</h1>
+    <div id="startButtons">
+        <button id="playBtn">PLAY</button>
+        <button id="instructionsBtn">INSTRUCTIONS</button>
+        <button id="skinBtn">SKIN</button>
+    </div>
+</div>
+
+<!-- Istruzioni -->
+<div id="instructions" class="hidden">
+    <p>Usa le frecce ⬆️⬇️⬅️➡️ per muovere il serpente.</p>
+    <p>Premi S per cambiare colore del serpente.</p>
+    <button id="backInstr">BACK</button>
+</div>
+
+<!-- Skin -->
+<div id="skinMenu" class="hidden">
+    <p>Scegli colore:</p>
+    <button class="skinChoice" data-color="lime">Lime</button>
+    <button class="skinChoice" data-color="cyan">Cyan</button>
+    <button class="skinChoice" data-color="yellow">Yellow</button>
+    <button class="skinChoice" data-color="orange">Orange</button>
+    <button class="skinChoice" data-color="pink">Pink</button>
+    <button id="backSkin">BACK</button>
+</div>
+
+<!-- Gioco -->
+<div id="gameContainer" class="hidden">
+    <p>Punteggio: <span id="score">0</span></p>
+    <canvas id="game" width="600" height="600"></canvas>
+</div>
+
+<!-- Game Over -->
+<div id="gameOver" class="hidden">
+    <h2>GAME OVER</h2>
+    <p>Punteggio: <span id="finalScore">0</span></p>
+    <button id="restartBtn">RESTART</button>
+    <button id="menuBtn">MENU PRINCIPALE</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
